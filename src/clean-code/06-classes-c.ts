@@ -1,4 +1,7 @@
-() => {
+(() => {
+  // Aplicando el principio de responsabilidad única
+  // Priorizar composición frente a herencia
+
   type Gender = 'M' | 'F';
 
   interface PersonProps {
@@ -18,25 +21,34 @@
   }
 
   interface UserProps {
-    birthDate: Date;
     email: string;
-    gender: Gender;
-    name: string;
     role: string;
   }
 
-  class User extends Person {
+  class User {
     public email: string;
-    public role: string;
     public lastAccess: Date;
-    constructor({ email, role, name, gender, birthDate }: UserProps) {
-      super({ name, gender, birthDate });
+    public role: string;
+    constructor({ email, role }: UserProps) {
       this.lastAccess = new Date();
       this.email = email;
       this.role = role;
     }
     checkCredentials() {
       return true;
+    }
+  }
+
+  interface SettingsProps {
+    lastOpenFolder: string;
+    workingDirectory: string;
+  }
+  class Settings {
+    public workingDirectory: string;
+    public lastOpenFolder: string;
+    constructor({ workingDirectory, lastOpenFolder }: SettingsProps) {
+      this.workingDirectory = workingDirectory;
+      this.lastOpenFolder = lastOpenFolder;
     }
   }
 
@@ -49,21 +61,22 @@
     role: string;
     workingDirectory: string;
   }
-  class UserSettings extends User {
-    public workingDirectory: string;
-    public lastOpenFolder: string;
+  class UserSettings {
+    public person: Person;
+    public user: User;
+    public settings: Settings;
     constructor({
-      workingDirectory,
-      lastOpenFolder,
-      email,
-      role,
       name,
       gender,
       birthDate,
+      email,
+      role,
+      lastOpenFolder,
+      workingDirectory,
     }: UserSettingsProps) {
-      super({ email, role, name, gender, birthDate });
-      this.workingDirectory = workingDirectory;
-      this.lastOpenFolder = lastOpenFolder;
+      this.person = new Person({ name, gender, birthDate });
+      this.user = new User({ email, role });
+      this.settings = new Settings({ lastOpenFolder, workingDirectory });
     }
   }
 
@@ -87,6 +100,6 @@
     'M',
     new Date('1985-10-21')
   );*/
-  userSettings.checkCredentials();
+  userSettings.user.checkCredentials();
   console.log({ userSettings });
-};
+})();
