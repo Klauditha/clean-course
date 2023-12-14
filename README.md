@@ -55,3 +55,32 @@ DESVENTAJAS
 - No es rastreable.
 - Dificil de testear debido a su ubicación.
   
+### Alto acoplamiento
+
+Lo ideal es tener bajo acoplamiento y buena cohesión.
+
+DESVENTAJAS
+- Un cambio en un módulo por lo general provoca un efecto dominó de los cambios en otros módulos.
+- El ensamblaje de módulos puede requerir más esfuerzo y/o tiempo debido a la mayor dependencia entre módulos.
+- Un módulo en particular puede ser más dífícil de reutilizar y/o probar porque se debe incluir módulos dependientes.
+
+POSIBLES SOLUCIONES
+- "A" tiene un atributo que se refiere a "B".
+- "A" llama a los servicios de un objeto "B".
+- "A" tiene un método que hace referencia a "B" (a través del tipo de retorno o parámetro).
+- "A" es una subclase de (o implementa) la clase "B".
+
+### Cohesión
+
+Lo ideal es tener bajo acoplamiento y buena cohesión
+- Se refiere a lo que la clase (o módulo) puede hacer.
+- La baja cohesión significaria que la clase realiza una gran variedad de acciones: es amplia, no se enfoca en lo que debe hacer.
+- Alta cohesión significa que la clase se enfoca en lo que debería estar haciendo, es decir, solo métodos relacionados con la intención de la clase.
+
+### Acoplamiento
+
+Lo ideal es tener bajo acoplamiento y buena cohesión.
+- Se refiere a cuán relacionadas o dependientes son dos clases o módulos entre sí.
+- En bajo acoplamiento, cambiar algo importante en una clase no debería afectar a la otra.
+- En alto acomplamiento, dificultaría el cambio y el mantenimiento de su código; dado que las clases están muy unidad, hacer un cambio podría requerir una renovación completa del sistema.
+
