@@ -145,3 +145,22 @@ Se pasa pasar un objeto que contenga todos los parametros.
 
 ## Acopladores
 
+### Feature Envy
+
+Un método accede más a los datos de otros métodos más que a sus propios datos.
+
+### Intimidad Inapropiada
+
+Cuando una clase utiliza campos y métodos internos de otra clase.
+Las clases deben saber lo menos posible de otras clases.
+Simplica el soporte y la optimización del código.
+
+### Cadenas de mensajes
+
+Funciones que llaman a muchas entre si: De A a B , de B a C y asi sucesivamente.
+Canal complejo de comunicación.
+Al evitar esto se reduce la cantidad de código y las dependencias.
+
+### The Middle Man
+
+Cuando la única acción de una clase es delegar la función a otra clase.
