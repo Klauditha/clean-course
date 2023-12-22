@@ -84,3 +84,38 @@ Lo ideal es tener bajo acoplamiento y buena cohesión.
 - En bajo acoplamiento, cambiar algo importante en una clase no debería afectar a la otra.
 - En alto acomplamiento, dificultaría el cambio y el mantenimiento de su código; dado que las clases están muy unidad, hacer un cambio podría requerir una renovación completa del sistema.
 
+## Code Smells adicionales
+
+### Código no probable
+
+Dificilmente testeable
+- Código con alto acomplamiento.
+- Código con muchas dependencias no inyectadas.
+- Dependencias en el contexto global (Tipo Singleton)
+
+### Optimizaciones prematuras
+
+Mantener abiertas las opciones retrasando la toma de decisiones nos permite darle mayor relevancia a lo que es más importante en una aplicación.
+No debemos anticiparnos a requisitos y desarrollar abstracciones innecesarias que puedan añadir complejidad accidental.
+
+### Nombres poco descriptivos
+
+- Nombre de variables mal nombradas.
+- Nombre de clases genéricas.
+- Nombres de funciones mal nombradas.
+- Ser muy especifico o demasiado genérico.
+
+### Duplicidad de código
+
+No aplicar el principio DRY
+
+Duplicidad Real
+- Código es idéntico y cumple la misma función.
+- Un cambio implicaria actualizar todo el código idéntico en varios lugares.
+- Incrementa posibilidades de error humano al olviodar una parte para actualizar.
+- Mayor cantidad de pruebas innecesarias.
+
+Duplicidad Accidental
+- Código luce similar pero cumple funciones distintas.
+- Cuando hay un cambio, solo hay que modificar un sólo lugar.
+- Se puede trabajar con parámetros u optimizaciones.
