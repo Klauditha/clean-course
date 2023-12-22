@@ -142,3 +142,6 @@ Solución agrupar todas esas variables en un modulo o clase, etc.
 Más de 3 o 4 argumentos en un método.
 Validar si todos los parametros necesarios.
 Se pasa pasar un objeto que contenga todos los parametros.
+
+## Acopladores
+
