@@ -119,3 +119,26 @@ Duplicidad Accidental
 - Código luce similar pero cumple funciones distintas.
 - Cuando hay un cambio, solo hay que modificar un sólo lugar.
 - Se puede trabajar con parámetros u optimizaciones.
+
+## Otros olores honorificos
+
+- refactoring.guru
+
+### Inflación
+
+Método con demasiadas lineas de código.
+Para resolver se debe tratar de dividir en pequeños métodos con tareas especificas.
+
+Clases super grandes.
+Separar en subClases
+
+### Obseción Primitiva
+
+Usar campos primitivos que con el tiempo se hace más compleja.
+Solución agrupar todas esas variables en un modulo o clase, etc.
+
+### Lista larga de parámetros
+
+Más de 3 o 4 argumentos en un método.
+Validar si todos los parametros necesarios.
+Se pasa pasar un objeto que contenga todos los parametros.
