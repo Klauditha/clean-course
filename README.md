@@ -164,3 +164,20 @@ Al evitar esto se reduce la cantidad de código y las dependencias.
 ### The Middle Man
 
 Cuando la única acción de una clase es delegar la función a otra clase.
+
+
+## Principios SOLID
+
+Nos indican cómo organizar nuestras funciones y estructuras de datos en componentes y cómo dichos componentes deben estar interconectados.
+
+- Single Responsability: Responsabilidad única.
+- Open and Close: Abierto y cerrado.
+- Liskov Substitution: Sustitución de Liskov.
+- Interface segregation: Segregación de interfaz.
+- Dependency inversion: Inversión de dependencias.
+
+### SRP - Principio de Responsabilidad única
+
+"Nunca debería haber más de un motivo por el cual cambiar una clase o un módulo"
+
+Tener una unica responsabilidad !== Hacer una única cosa
