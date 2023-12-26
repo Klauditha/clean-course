@@ -190,3 +190,11 @@ Tener una unica responsabilidad !== Hacer una única cosa
 - Número elevado de importaciones.
 - Cantidad elevada de métodos públicos.
 - Excesivo número de líneas de código.
+
+### OCP: Principio de abierto y cerrado
+
+Depende mucho del contexto.
+
+Establece que las entidades de software (clases, módulos, métodos, etc) deben estar abiertas para extensión, pero cerradas para la modificación.
+
+Se puede lograr de muchas maneras, incluso mediante el uso de la herencia o mediante patrones de diseño de composición como el patrón de estrategia.
