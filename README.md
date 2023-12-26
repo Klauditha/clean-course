@@ -181,3 +181,12 @@ Nos indican cómo organizar nuestras funciones y estructuras de datos en compone
 "Nunca debería haber más de un motivo por el cual cambiar una clase o un módulo"
 
 Tener una unica responsabilidad !== Hacer una única cosa
+
+### SRP - Detectar violaciones
+
+- Nombres de clases o módulos demasiado genéricos.
+- Cambios en el código suelen afectar la clase o módulo.
+- La clase involucra varias capas.
+- Número elevado de importaciones.
+- Cantidad elevada de métodos públicos.
+- Excesivo número de líneas de código.
