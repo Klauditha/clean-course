@@ -198,3 +198,7 @@ Depende mucho del contexto.
 Establece que las entidades de software (clases, módulos, métodos, etc) deben estar abiertas para extensión, pero cerradas para la modificación.
 
 Se puede lograr de muchas maneras, incluso mediante el uso de la herencia o mediante patrones de diseño de composición como el patrón de estrategia.
+
+### Remover dependencia
+
+    ```npm remove axios```
