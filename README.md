@@ -207,3 +207,9 @@ Se puede lograr de muchas maneras, incluso mediante el uso de la herencia o medi
 
 - Cuando los cambios afectan nuestra clase o módulo constantemente.
 - Cuando una clase o módulo afecta muchas capas ( Presentación, almacenamiento, etc).
+
+### Principio de Substitución de Liskov
+
+"Las funciones que utilicen punterios o referencias a clases base deben ser capaces de usar objetos de clases derivadas sin saberlo".
+
+"Siendo U un subtipo de T, cualquier instancia de T debería poder ser sustituida por cualquier instancia de U sin alterar las propiedades del sistema"
