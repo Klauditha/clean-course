@@ -202,3 +202,8 @@ Se puede lograr de muchas maneras, incluso mediante el uso de la herencia o medi
 ### Remover dependencia
 
     ```npm remove axios```
+
+### Detectar violaciones de OPC
+
+- Cuando los cambios afectan nuestra clase o módulo constantemente.
+- Cuando una clase o módulo afecta muchas capas ( Presentación, almacenamiento, etc).
