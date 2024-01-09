@@ -213,3 +213,9 @@ Se puede lograr de muchas maneras, incluso mediante el uso de la herencia o medi
 "Las funciones que utilicen punterios o referencias a clases base deben ser capaces de usar objetos de clases derivadas sin saberlo".
 
 "Siendo U un subtipo de T, cualquier instancia de T debería poder ser sustituida por cualquier instancia de U sin alterar las propiedades del sistema"
+
+### Principio de Segregación de Interfaz
+
+"Los clientes no deberian estar obligados a depender de interfaces que no utilicen".
+
+Aplica para lenguejes fuertemente tipados.
