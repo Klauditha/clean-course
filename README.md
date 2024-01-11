@@ -219,3 +219,7 @@ Se puede lograr de muchas maneras, incluso mediante el uso de la herencia o medi
 "Los clientes no deberian estar obligados a depender de interfaces que no utilicen".
 
 Aplica para lenguejes fuertemente tipados.
+
+### Detectar violaciones de Segreción de Interfaz
+
+- Si las interfaces que diseñamos nos obligan a violar los principios de responsabilidad unica y substitución de Liskov.
