@@ -218,8 +218,25 @@ Se puede lograr de muchas maneras, incluso mediante el uso de la herencia o medi
 
 "Los clientes no deberian estar obligados a depender de interfaces que no utilicen".
 
-Aplica para lenguejes fuertemente tipados.
+Aplica para lenguajes fuertemente tipados.
 
 ### Detectar violaciones de Segreción de Interfaz
 
 - Si las interfaces que diseñamos nos obligan a violar los principios de responsabilidad unica y substitución de Liskov.
+
+### Principio de Inversión de Dependencias
+
+"Los módulos de alto nivel no deben depender de módulos de bajo nivel. Ambos deben depender de abstracciones. Las abstracciones no deben depender de concreciones. Los detalles deben depender de abstracciones".
+
+- Los componentes más importantes son aquellos centrados en resolver el problema subyacente al negocio, es decir, la capa de dominio.
+- Los menos importantes son los que están próximos a la infraestructura, es decir, aquellos relacionados con la UI, la persistencia, la comunicación con APIs externas, etc.
+
+Depender de abstracciones:
+- Clases abstractas o interfaces.
+- Esto aumenta la tolerancia al cambio.
+- Cada cambio en un componente abstracto implica un cambio en su implementación.
+- Los cambios en implementaciones concretas, la mayoria de las veces, no requieren cambios en las interfaces que implementa.
+
+Inyección de dependencias:
+- Dependencia en programación, significa que un módulo o componente requiere de otro para poder realizar su trabajo.
+- Cuando una aplicación está formada por muchos módulos debemos usar inyección de dependencias.
